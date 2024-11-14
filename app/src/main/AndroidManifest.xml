@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuizManagement"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.QuizManagement">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Ajout de l'activité AddQuizActivity -->
+        <activity android:name=".ui.AddQuizActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <!-- Ajout de l'activité ListQuizActivity -->
+        <activity android:name=".ui.theme.ListQuizActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <!-- Ajout de l'activité EditQuizActivity -->
+        <activity android:name=".ui.theme.EditQuizActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.ListQuizActivityUser"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.AddQuestionActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.DisplayQuestionsActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.AddChoixActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.QuizQuestionsActivity"
+            android:theme="@style/Theme.QuizManagement" />
+        <activity android:name=".ui.theme.AttestationActivity"
+            android:theme="@style/Theme.QuizManagement" />
+    </application>
+
+    <!-- Permissions for storage access -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

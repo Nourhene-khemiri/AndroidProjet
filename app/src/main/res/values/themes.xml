@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.QuizManagement" parent="Theme.MaterialComponents.Light.DarkActionBar" />
+    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button" />
+
+</resources>
